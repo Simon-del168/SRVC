@@ -14,7 +14,7 @@ conda env create -f environment.yml
 
 ## Running SRVC
 For running SRVC, check `python srvc.py --help`.
-
+python srvc.py /data/VSR_Project/srvc/SRVC/datasets/yuv/test1.yuv /data/VSR_Project/srvc/SRVC/datasets/resize/test1_480x270.yuv /data/VSR_Project/srvc/SRVC/output_new "" "srvc" 0.0005 16 0 100 1 5 0.1 5 "24" 0 False False True True True "1920,1080" "480,270" False
 ## Videos
 ### Vimeo Short Films
 We use 28 short films with direct download buttons on Vimeo. These videos are in high-resolution, have realistic scene changes from movie-makers, and have 10min+ duration. 
