@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-
+//提取指定数量的帧
 def fetch_chunk_frames(cap, n_chunk_frames, step_frame, size=None):
     frames = []
     cap_type = 'cv2_cap' if isinstance(cap, cv2.VideoCapture) else 'yuv_cap'
