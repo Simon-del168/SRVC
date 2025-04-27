@@ -20,7 +20,7 @@ def fetch_chunk_frames(cap, n_chunk_frames, step_frame, size=None):
                 frame = cv2.resize(frame, size)
             frames.append(frame)
     return frames
-
+//根据输入的参数 args 配置视频处理的相关参数
 def get_config(args):
     start_time = args.start_time
     end_time = args.end_time
@@ -89,7 +89,7 @@ m = np.array([[1.0, 1.0, 1.0],
               [1.4019975662231445, -0.7141380310058594, 0.00001542569043522235]])
 m = m[..., [2, 1, 0]]
 
-
+//将 YUV 格式的图像转换为 BGR 格式的图像
 def YUV2BGR(yuv):
     h = int(yuv.shape[0] / 1.5)
     w = yuv.shape[1]
@@ -112,7 +112,7 @@ def YUV2BGR(yuv):
 
     return bgr.astype(np.uint8)
 
-
+//用于读取 YUV 格式的视频文件
 class VideoCaptureYUV:
     def __init__(self, filename, size):
         self.width, self.height = size
