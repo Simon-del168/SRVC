@@ -1,7 +1,7 @@
 import numpy as np
 import tensorflow as tf
 
-
+//计算两个 RGB 图像之间的结构相似性指数（SSIM）和峰值信噪比（PSNR），其中 PSNR 分别计算 Y 通道（亮度通道）和 RGB 整体的结果
 def get_metrics(im1, im2):
     # Assumes im1 and im2 are in RGB space with float values in range [0, 1]
     im1 = tf.clip_by_value(im1, 0, 1)
